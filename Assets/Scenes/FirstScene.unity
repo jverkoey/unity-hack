@@ -95,6 +95,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 779478246}
+  - 114: {fileID: 779478248}
+  - 114: {fileID: 779478247}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -114,6 +116,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &779478247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779478245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7b2ba174a184ca2bbe96e01ea2c559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 32
+  rows: 32
+  doodadCount:
+    minimum: 10
+    maximum: 50
+  floorTiles:
+  - {fileID: 153898, guid: fdb049bbc37cd4034a849e43e2ef830c, type: 2}
+  - {fileID: 119044, guid: b806a3a23aac74bc997c9dc6814705a5, type: 2}
+  doodadTiles:
+  - {fileID: 199000, guid: f1dbe5e5e56fb4b408afa2e6e1ac818b, type: 2}
+--- !u!114 &779478248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779478245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec440f35446c349a482711ac5c0e1a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652472240
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,6 +160,7 @@ GameObject:
   - 92: {fileID: 1652472243}
   - 124: {fileID: 1652472242}
   - 81: {fileID: 1652472241}
+  - 114: {fileID: 1652472246}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -199,3 +234,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1652472246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652472240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60b2c274479c4385aa80ff3695111b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
