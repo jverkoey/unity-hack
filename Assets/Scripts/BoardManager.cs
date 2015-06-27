@@ -110,7 +110,9 @@ public class BoardManager : MonoBehaviour
 			GameObject tileChoice = tileArray[Random.Range (0, tileArray.Length)];
 			
 			//Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
-			Instantiate(tileChoice, randomPosition, Quaternion.identity);
+			GameObject instance = Instantiate(tileChoice, randomPosition, Quaternion.identity) as GameObject;
+
+			instance.transform.SetParent (boardHolder);
 		}
 	}
 	
