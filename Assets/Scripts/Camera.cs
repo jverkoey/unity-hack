@@ -22,22 +22,26 @@ public class Camera : MonoBehaviour {
 		
 		if (Input.mousePosition.x > theScreenWidth - Boundary)
 		{
-			transform.Translate(new Vector3(speed * Time.deltaTime,0,0));
+			float scale = (Input.mousePosition.x - (theScreenWidth - Boundary)) / Boundary;
+			transform.Translate(new Vector3(scale * speed * Time.deltaTime,0,0));
 		}
 		
 		if (Input.mousePosition.x < 0 + Boundary)
 		{
-			transform.Translate(new Vector3(-speed * Time.deltaTime,0,0));
+			float scale = 1 - Input.mousePosition.x / Boundary;
+			transform.Translate(new Vector3(scale * -speed * Time.deltaTime,0,0));
 		}
 		
 		if (Input.mousePosition.y > theScreenHeight - Boundary)
 		{
-			transform.Translate(new Vector3(0,speed * Time.deltaTime,0));
+			float scale = (Input.mousePosition.y - (theScreenHeight - Boundary)) / Boundary;
+			transform.Translate(new Vector3(0,scale * speed * Time.deltaTime,0));
 		}
 		
 		if (Input.mousePosition.y < 0 + Boundary)
 		{
-			transform.Translate(new Vector3(0,-speed * Time.deltaTime,0));
+			float scale = 1 - Input.mousePosition.y / Boundary;
+			transform.Translate(new Vector3(0,scale * -speed * Time.deltaTime,0));
 		}
 		if(Input.GetKey(KeyCode.RightArrow))
 		{
