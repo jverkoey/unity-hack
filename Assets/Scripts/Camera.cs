@@ -11,6 +11,7 @@ public class Camera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// http://forum.unity3d.com/threads/pixel-perfect-2d-in-4-3.210497/
 		GetComponent<UnityEngine.Camera>().orthographicSize = (Screen.height / 32f / 2.0f); // 100f is the PixelPerUnit that you have set on your sprite. Default is 100.	
 		
 		theScreenWidth = Screen.width;
