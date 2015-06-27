@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Camera : MonoBehaviour {
+public class CameraInput : MonoBehaviour {
 	
 	public float Boundary = 50; // distance from edge scrolling starts
 	public float speed = 15f;
