@@ -44,3 +44,6 @@ TagManager:
   - name: tiles
     uniqueID: 667854753
     locked: 0
+  - name: doodads
+    uniqueID: 3166375145
+    locked: 0
