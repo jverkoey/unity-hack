@@ -45,7 +45,7 @@ public class BoardManager : MonoBehaviour
 			for(int y = 1; y < rows-1; y++)
 			{
 				//At each index add a new Vector3 to our list with the x and y coordinates of that position.
-				gridPositions.Add (new Vector3(x, y, -1f));
+				gridPositions.Add (new Vector3(x, y, 0f));
 			}
 		}
 	}
