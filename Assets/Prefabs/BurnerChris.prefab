@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9546418}
   - 50: {fileID: 5057098}
   - 61: {fileID: 6149226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BurnerChris
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -117,6 +117,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: -264717409
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
